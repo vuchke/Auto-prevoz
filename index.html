@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha512-rO2SXEKBSICa/AfyhEK5ZqWFCOok1rcgPYfGOqtX35OyiraBg6Xa4NnBJwXgpIRoXeWjcAmcQniMhp22htDc6g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css"
+      integrity="sha512-f0tzWhCwVFS3WeYaofoLWkTP62ObhewQ1EZn65oSYDZUg1+CyywGKkWzm8BxaJj5HGKI72PnMH9jYyIFz+GH7g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_RD2Om2HKl0lJEV1v3ag2a");
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="navbar">
+      <a href="#banner3" id="logo"><img src="./img/Logo.png" alt="Logo" /></a>
+      <div id="navbar-right">
+        <a data-page="banner" href="#banner">Početna</a>
+        <a data-page="about" href="#about">O nama</a>
+        <a data-page="banner2" href="#banner2">Kako mi to radimo!</a>
+        <a data-page="places" href="#places">Destinacije</a>
+        <a data-page="banner3" href="#banner3">Kontakt</a>
+        <div class="bubble"></div>
+      </div>
+      <!-- mobile nav -->
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#banner">Početna</a></li>
+        <li><a href="#about">O nama</a></li>
+        <li><a href="#banner2">Kako mi to radimo!</a></li>
+        <li><a href="#places">Destinacije</a></li>
+        <li><a href="#banner3">Kontakt</a></li>
+      </ul>
+    </div>
+
+    <section data-index="0" class="banner" id="banner">
+      <video
+        autoplay
+        muted
+        loop
+        id="myVideo"
+        class="fitBg"
+        src="./video/GoPro Hero 5 Night Drive Time lapse in 4K - City at Night- Szczecin.mp4"
+        type="video/mp4"
+      ></video>
+      <div class="content">
+        <h2>Explore The World</h2>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          dolorum possimus modi, unde eligendi dolore quo iste ab quisquam, iure
+          aliquam voluptatum quibusdam, odio reiciendis?
+        </p>
+        <a href="#banner3" class="btn"
+          ><i class="fa fa-envelope fa-fw">&nbsp</i> Kontakt</a
+        >
+      </div>
+    </section>
+
+    <section data-index="1" class="about" id="about">
+      <div class="contentBox">
+        <h2 class="titleText">Feel The Beauty Of The World</h2>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsum
+          vero corrupti obcaecati animi possimus cum consequuntur magni esse
+          temporibus dignissimos dolore sed doloribus ea eaque sapiente, fugit
+          quia labore? Provident modi corporis quos! Neque, hic explicabo vel
+          sequi omnis veritatis delectus nostrum nihil in praesentium a, harum
+          minima illum.
+        </p>
+        <a href="#banner2" class="btn"
+          ><i class="fa fa-car fa-fw" aria-hidden="true">&nbsp</i> Kako mi to
+          radimo?</a
+        >
+      </div>
+      <div class="imageBox">
+        <img
+          src="./img/highway3.jpg"
+          alt="img1"
+          class="fitBg"
+          style="border-radius: 15px;"
+        />
+      </div>
+    </section>
+
+    <section data-index="2" class="banner2" id="banner2">
+      <div class="panels">
+        <div class="panel panel1">
+          <p>Kada posaljete email sa podatcima</p>
+          <p>Prvi <br />kontakt</p>
+          <p>sledi poziv sa nase strane gde se dogovaramo oko detalja</p>
+        </div>
+
+        <div class="panel panel2">
+          <p>Experience</p>
+          <p>Desti<br />nacija</p>
+          <p>Today</p>
+        </div>
+        <div class="break"></div>
+        <div class="panel panel3">
+          <p>Give</p>
+          <p>Put</p>
+          <p>You can</p>
+        </div>
+
+        <div class="panel panel4">
+          <p>Life</p>
+          <p>In</p>
+          <p>Motion</p>
+        </div>
+      </div>
+    </section>
+
+    <section data-index="3" class="places" id="places">
+      <div class="content">
+        <h2 class="titleText neonText neonOff">
+          Most popular travel destination in the world
+        </h2>
+        <p class="text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
+          doloribus labore fugit tenetur minima quibusdam, alias quaerat
+          inventore! Aut vitae a minima rem consequatur sit explicabo facere
+          similique consequuntur voluptate, maiores optio ratione.
+        </p>
+      </div>
+      <div class="destinationList">
+        <div class="box">
+          <div class="imageBox">
+            <img
+              src="./img/destination1.jpg"
+              alt="destination1"
+              class="fitBg"
+            />
+          </div>
+          <div class="content">
+            <h2>
+              Destination One <br />
+              <span>Country Name</span>
+            </h2>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imageBox">
+            <img src="./img/roadPhone.jpg" alt="destination2" class="fitBg" />
+          </div>
+          <div class="content">
+            <h2>
+              Destination Two <br />
+              <span>Country Name</span>
+            </h2>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imageBox">
+            <img
+              src="./img/destination3.jpg"
+              alt="destination3"
+              class="fitBg"
+            />
+          </div>
+          <div class="content">
+            <h2>
+              Destination Three<br />
+              <span>Country Name</span>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <a href="#banner3" class="btn"
+        ><i class="fa fa-map-o" aria-hidden="true">&nbsp &nbsp</i>Rezerviši</a
+      >
+    </section>
+
+    <section data-index="4" class="banner3" id="banner3">
+      <div class="formContainer" id="form">
+        <form @submit.prevent="submitForm">
+          <transition name="flip" mode="out-in">
+            <div v-if="messageSent" class="row text-center" key="response">
+              <div class="col">
+                <div class="formSent">
+                  <h2>Uspesno ste poslali podatke!!!</h2>
+                  <hr />
+                  <h5 style="color: #fff;">
+                    Uskoro sledi poziv sa nase strane <br />
+                    radi daljnjeg dogovora :)
+                  </h5>
+                </div>
+              </div>
+            </div>
+
+            <div v-else key="form">
+              <h2>Kontakt</h2>
+              <div class="row100">
+                <div class="col">
+                  <div class="inputBox">
+                    <input
+                      type="text"
+                      name="ime"
+                      required="required"
+                      v-model="form.name"
+                    />
+                    <span class="text">Ime i Prezime</span>
+                    <span class="line"></span>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="inputBox">
+                    <input
+                      type="text"
+                      name="kontakt"
+                      required="required"
+                      v-model="form.contact"
+                    />
+                    <span class="text">Kontakt Telefon</span>
+                    <span class="line"></span>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+
+              <h4>Putujem</h4>
+
+              <div class="row100">
+                <div class="col">
+                  <div class="inputBox">
+                    <input
+                      type="text"
+                      name="od"
+                      required="required"
+                      v-model="form.from"
+                    />
+                    <span class="text">Od</span>
+                    <span class="line"></span>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="inputBox">
+                    <input
+                      type="text"
+                      name="do"
+                      required="required"
+                      v-model="form.to"
+                    />
+                    <span class="text">Do</span>
+                    <span class="line"></span>
+                  </div>
+                </div>
+              </div>
+
+              <h4>Vreme</h4>
+
+              <div class="row100">
+                <div class="col">
+                  <div>
+                    <input
+                      style="background-color: #cc5500; color: black;"
+                      id="datetimepicker"
+                      required="required"
+                      type="text"
+                      name="date"
+                      class="form-control"
+                      placeholder="Datum Polaska"
+                      :value="form.date"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row100">
+                <div class="col">
+                  <div class="inputBox textarea">
+                    <textarea
+                      name="napomena"
+                      placeholder="U slucaju neke napomene ili zahteva ostavite komentar. :)"
+                    ></textarea>
+
+                    <span class="line"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row100">
+                <div class="col">
+                  <button type="submit" class="btn" :disabled="!formIsValid">
+                    <i class="fa fa-check">&nbsp &nbsp</i> Posalji
+                  </button>
+                </div>
+              </div>
+            </div>
+          </transition>
+        </form>
+      </div>
+    </section>
+
+    <div class="footer">
+      <ul class="social">
+        <li>
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> </a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+      <h4 class="copyrightText">Copyright and other lightnings</h4>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha512-I5TkutApDjnWuX+smLIPZNhw+LhTd8WrQhdCKsxCFRSvhFx2km8ZfEpNIhF9nq04msHhOkE8BMOBj5QE07yhMA=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"
+      integrity="sha512-AIOTidJAcHBH2G/oZv9viEGXRqDNmfdPVPYOYKGy3fti0xIplnlgMHUGfuNRzC6FkzIo0iIxgFnr9RikFxK+sw=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"
+      integrity="sha512-QJsj3afWlCpnQ60XzzYE8Jb3IgHIK1BcGZox9rUSmRRq3Ocz9vQ1yR80eX2/b9jfx/UuT5zYWNdrM8Te/eCMhQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Form in Vue
+      var form = new Vue({
+        el: "#form",
+        data: {
+          messageSent: false,
+          errors: [],
+          form: {
+            name: null,
+            contact: null,
+            from: null,
+            to: null,
+          },
+        },
+        methods: {
+          submitForm(e) {
+            emailjs
+              .sendForm(
+                "gmail_test",
+                "contact_form",
+                e.target,
+                "user_RD2Om2HKl0lJEV1v3ag2a"
+              )
+              .then(
+                (result) => {
+                  this.messageSent = true;
+                  console.log("SUCCESS!", result.status, result.text);
+                  this.messageSent = true;
+                },
+                (error) => {
+                  console.log("FAILED...", error);
+                }
+              );
+          },
+        },
+        computed: {
+          nameIsValid() {
+            return !!this.form.name;
+          },
+          contactIsValid() {
+            return !!this.form.contact;
+          },
+          fromIsValid() {
+            return !!this.form.from;
+          },
+          toIsValid() {
+            return !!this.form.to;
+          },
+
+          formIsValid() {
+            return (
+              this.nameIsValid &&
+              this.contactIsValid &&
+              this.fromIsValid &&
+              this.toIsValid
+            );
+          },
+        },
+      });
+    </script>
+ 
+
+    <script src="app.js"></script>
+  </body>
+</html>
