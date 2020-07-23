@@ -61,8 +61,8 @@ section {
   transition: 0.4s ease-in-out;
 }
 #navbar-right a:hover {
-  border-bottom: 2px solid #0079c4da;
-  color: #0079c4da;
+  border-bottom: 2px solid #849bff;
+  color: #849bff;
 }
 
 /* Display some links to the right */
@@ -154,7 +154,7 @@ section {
 }
 
 .banner .content h2 {
-  color: #abb204;
+  color: #849bff;
   text-shadow: 1px 1px 1px black;
   font-size: 5em;
 }
@@ -180,7 +180,7 @@ section {
   transform: scale(1.1);
   /* border-radius: 15px; */
   color: #000;
-  background: #abb204;
+  background: #849bff;
   /* font-weight: 600; */
   border: 1px solid black;
   transition: 0.5s;
@@ -222,7 +222,7 @@ section {
 
 .contentBox .titleText {
   font-weight: 600;
-  color: #abb204;
+  color: #849bff;
   text-shadow: 1px 1px 1px black;
   font-size: 2em;
   margin-bottom: 100px;
@@ -452,7 +452,7 @@ section {
 }
 
 .destinationList .box .content h2 {
-  color: #abb204;
+  color: #849bff;
   text-shadow: 1px 1px 1px black;
   font-weight: 500;
   line-height: 1.2em;
